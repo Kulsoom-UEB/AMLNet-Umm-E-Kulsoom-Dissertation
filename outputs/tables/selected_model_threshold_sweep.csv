@@ -1,4 +1,4 @@
-model_name,split,threshold,accuracy,precision,recall,f1_score,pr_auc_average_precision,roc_auc,true_positives,false_positives,false_negatives,true_negatives,positives_in_split,predicted_positive_alerts,alert_rate_percent,alerts_per_10k_transactions
+models_name,split,threshold,accuracy,precision,recall,f1_score,pr_auc_average_precision,roc_auc,true_positives,false_positives,false_negatives,true_negatives,positives_in_split,predicted_positive_alerts,alert_rate_percent,alerts_per_10k_transactions
 XGBoost_class_weight,validation,0.01,0.9610826412925162,0.03940217391304348,0.9961832061068703,0.07580598315422597,0.9467937540721271,0.999320026048758,261,6363,1,156901,262,6624,4.050732,405.07
 XGBoost_class_weight,validation,0.02,0.9712767388672138,0.05247225025227043,0.9923664122137404,0.09967414222733371,0.9467937540721271,0.999320026048758,260,4695,2,158569,262,4955,3.030099,303.01
 XGBoost_class_weight,validation,0.03,0.9770128297640742,0.06450809464508095,0.9885496183206107,0.12111292962356793,0.9467937540721271,0.999320026048758,259,3756,3,159508,262,4015,2.455267,245.53
