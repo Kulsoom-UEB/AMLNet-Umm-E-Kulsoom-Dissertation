@@ -1,4 +1,4 @@
-# Explainable Machine Learning for Suspicious Transaction Risk Detection in Anti-Money Laundering
+# Explainable Machine Learning fOr Suspicious Transaction Risk Detection in Anti-Money Laundering
 
 **Umm E Kulsoom** (B01040340)
 MSc Computer Science and Technology — Ulster University, Birmingham Campus
