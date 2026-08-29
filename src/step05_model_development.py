@@ -1,7 +1,7 @@
 """
 Step 05: Model Development with Hyperparameter Tuning.
 CRISP-DM: Modelling.
-Three algorithms (LightGBM removed at project scope):
+Three algorithms:
     Logistic Regression - interpretable linear baseline
     Random Forest       - non-linear ensemble
     XGBoost             - gradient boosting

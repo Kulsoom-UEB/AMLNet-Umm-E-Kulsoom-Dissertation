@@ -1,5 +1,5 @@
 """
-Notebook/Step 01: Data Understanding and Quality Audit.
+Step 01: Data Understanding and Quality Audit.
 CRISP-DM: Data Understanding.
 Audits shape, dtypes, missingness, duplicates, target balance, categorical
 levels and temporal coverage of the raw AMLNet dataset. No cleaning and no

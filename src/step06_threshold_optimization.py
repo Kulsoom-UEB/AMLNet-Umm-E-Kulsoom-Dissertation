@@ -10,7 +10,7 @@ Selection rationale
 -------------------
 PR-AUC is the primary criterion because it is threshold-independent and
 appropriate for a 0.16 % positive class. F1 at the optimised threshold breaks
-ties, and reviewer alert volume breaks any remaining tie: in AML a model that
+ties, and fewest reviewer alert volume breaks any remaining tie: in AML a model that
 floods analysts with false positives is not operationally usable even when its
 ranking quality is high.
 """

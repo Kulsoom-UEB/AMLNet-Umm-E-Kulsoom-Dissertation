@@ -8,9 +8,7 @@ Dataset:
     https://doi.org/10.5281/zenodo.16736515
     File: AMLNet_August 2025.csv  -> stored as data/raw/AMLNet.csv
 This module centralises paths, constants, leakage-control column groups,
-memory-efficient loading and the evaluation helpers that are reused by
-notebooks 00 to 10. Keeping them in one place avoids the copy-paste drift
-that existed in the earlier version of the code.
+memory-efficient loading and the evaluation helpers that are reused by all the pipeline steps. Keeping them in one place avoids copy-paste drift.
 """
 from __future__ import annotations
 import json
@@ -36,7 +34,7 @@ def set_seeds(seed: int = RANDOM_STATE) -> None:
 def find_project_root(start: Path | None = None) -> Path:
     """
     Locate the AMLNet_Project root whether the code is executed from
-    the project root, from notebooks/ or from src/.
+    the project root or from src/.
     """
     current = (start or Path.cwd()).resolve()
     for candidate in [current, *current.parents]:
@@ -50,7 +48,6 @@ PROJECT_ROOT = find_project_root()
 DATA_DIR = PROJECT_ROOT / "data"
 DATA_RAW_DIR = DATA_DIR / "raw"
 DATA_PROCESSED_DIR = DATA_DIR / "processed"
-NOTEBOOKS_DIR = PROJECT_ROOT / "notebooks"
 SRC_DIR = PROJECT_ROOT / "src"
 MODELS_DIR = PROJECT_ROOT / "models"
 OUTPUTS_DIR = PROJECT_ROOT / "outputs"
@@ -61,7 +58,6 @@ DASHBOARD_DIR = PROJECT_ROOT / "dashboard"
 REQUIRED_DIRS = [
     DATA_RAW_DIR,
     DATA_PROCESSED_DIR,
-    NOTEBOOKS_DIR,
     SRC_DIR,
     MODELS_DIR,
     OUTPUTS_DIR,
@@ -90,7 +86,7 @@ EXPECTED_COLUMNS = [
 ]
 # `metadata` is a very large embedded JSON/py-dict string column (~600 MB of the
 # 691 MB file). It is leakage-prone AND memory-hostile, so it is never loaded
-# into the modelling pipeline. Notebook 01 samples it separately for auditing.
+# into the modelling pipeline. Step 01 samples it separately for auditing.
 HEAVY_COLUMNS = ["metadata"]
 LEAKAGE_OR_PROXY_COLUMNS = [
     "laundering_typology",   # typology label -> directly reveals the target
@@ -101,9 +97,8 @@ LEAKAGE_OR_PROXY_COLUMNS = [
 IDENTIFIER_COLUMNS = ["nameOrig", "nameDest"]
 # `step` is deliberately NOT modelled.
 # Justification: "The `step` column was removed because it represents the
-# simulation time index rather than a meaningful transaction attribute for
+# simulation sequential index rather than a meaningful transaction attribute for
 # suspicious transaction risk prediction." It is still audited in step 01
-# (temporal coverage) but never enters the model.
 SAFE_CANDIDATE_FEATURES = [
     "type", "amount", "category",
     "oldbalanceOrg", "newbalanceOrig",
@@ -210,7 +205,7 @@ def read_parquet_or_csv(path: Path) -> pd.DataFrame:
         return pd.read_csv(csv_twin, low_memory=False)
     raise FileNotFoundError(
         f"Required processed file not found: {path}\n"
-        "Please run the earlier notebooks/scripts in order."
+        "Please run the earlier steps in order."
     )
 def write_parquet(df: pd.DataFrame, path: Path) -> Path:
     """Write a processed artefact as parquet (falls back to csv)."""
@@ -224,7 +219,7 @@ def write_parquet(df: pd.DataFrame, path: Path) -> Path:
         df.to_csv(csv_path, index=True)
         return csv_path
 # --------------------------------------------------------------------------
-# Feature engineering (single definition, reused by notebook 03 and dashboard)
+# Feature engineering (single definition, reused by step 03 and dashboard)
 # --------------------------------------------------------------------------
 def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     """

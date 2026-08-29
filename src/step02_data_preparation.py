@@ -1,5 +1,5 @@
 """
-Notebook/Step 02: Data Preparation, Cleaning and Leakage Control.
+Step 02: Data Preparation, Cleaning and Leakage Control.
 CRISP-DM: Data Preparation.
 Applies the leakage-control decisions, removes identifier and label-like
 fields, handles missing values and duplicates, and writes a defensible

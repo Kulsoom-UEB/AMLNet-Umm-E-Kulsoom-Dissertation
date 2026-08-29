@@ -1,5 +1,5 @@
 """
-Notebook/Step 00: Project Setup and Reproducibility.
+Step 00: Project Setup and Reproducibility.
 
 CRISP-DM: pre-Business/Data-Understanding project setup.
 

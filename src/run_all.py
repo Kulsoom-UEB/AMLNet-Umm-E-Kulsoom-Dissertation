@@ -45,7 +45,7 @@ def main() -> None:
     print(f"Tables : {C.TABLES_DIR}")
     print(f"Figures: {C.FIGURES_DIR}")
     print(f"Models : {C.MODELS_DIR}")
-    print("Dashboard: streamlit run dashboard/app.py")
+    print("Dashboard: streamlit run src/app.py")
     print("=" * 78)
 if __name__ == "__main__":
     main()

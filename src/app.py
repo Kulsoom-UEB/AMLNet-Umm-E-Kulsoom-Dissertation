@@ -1,5 +1,9 @@
 """
-Step 09: Streamlit Reviewer-Support Dashboard (polished).
+AML Suspicious Transaction Risk Detection Dashboard
+---------------------------------------------------
+Umm E Kulsoom | B01040340 | COM748 | Ulster University
+
+Step 09: Streamlit Reviewer-Support Dashboard.
 CRISP-DM: Deployment (prototype).
 
 Reads ONLY saved outputs produced by steps 06-08 (metrics tables, figures,
@@ -176,7 +180,6 @@ st.markdown("""
 cfg = config()
 if cfg is None:
     st.error("**No frozen model found.** Run the pipeline first: `python src/run_all.py` "
-             "(or run the `AMLNet_RunAll.ipynb` notebook in Colab). "
              "Steps 00–08 must complete before the dashboard has anything to show.")
     st.stop()
 
@@ -190,6 +193,9 @@ strategy = cfg["imbalance_strategy"]
 with st.sidebar:
     st.markdown("### 🛡️ Explainable ML for Suspicious Transaction Risk Detection in AML")
     st.caption("MSc Research Project · COM748")
+    st.markdown("**Student:** Umm E Kulsoom")
+    st.markdown("**Student No:** B01040340")
+    st.markdown("**Supervisor:** Dr Anwar Haq")
     st.divider()
     st.markdown("**Selected model**")
     st.write(f"**{model_label}**")
