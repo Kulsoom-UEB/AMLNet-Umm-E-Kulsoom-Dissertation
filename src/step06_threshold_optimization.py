@@ -1,5 +1,5 @@
 """
-Step 06: Automatic Best-Model Selection and Threshold Optimisation.
+Step 06: Automatic Best-Model Selection & Threshold Optimisation.
 CRISP-DM: Evaluation.
 Nothing here is hardcoded. The best model is discovered from the validation
 metrics table, and the operating threshold is discovered by sweeping the

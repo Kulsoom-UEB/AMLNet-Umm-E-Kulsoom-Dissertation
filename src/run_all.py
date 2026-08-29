@@ -1,5 +1,5 @@
 """
-Run the complete AMLNet pipeline end to end.
+Run the complete AMLNet pipeline End to End.
     python src/run_all.py            # every step
     python src/run_all.py --from 05  # resume
     python src/run_all.py --only 08  # single step

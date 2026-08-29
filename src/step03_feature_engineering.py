@@ -1,7 +1,7 @@
 """
 Step 03: Feature Engineering.
 CRISP-DM: Data Preparation.
-Creates safe engineered features from amount and balance fields only.
+Creates safe engineered features from amount & balance fields only.
 No feature is derived from typology, metadata, risk-score, fraud-label or
 identifier columns.
 """

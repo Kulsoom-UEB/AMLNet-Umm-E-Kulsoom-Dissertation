@@ -1,7 +1,8 @@
 """
 Step 05: Model Development with Hyperparameter Tuning.
 CRISP-DM: Modelling.
-Three algorithms:
+Majority_Class_Benchmark as baseline comparison
+Three supervised machine learning algorithms:
     Logistic Regression - interpretable linear baseline
     Random Forest       - non-linear ensemble
     XGBoost             - gradient boosting

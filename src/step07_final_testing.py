@@ -1,7 +1,7 @@
 """
 Step 07: Final Test-Set Evaluation.
 CRISP-DM: Evaluation.
-Loads the model and threshold frozen by step 06 and applies them to the
+Loads the model & threshold frozen by step 06 and applies them to the
 untouched test set exactly once. No tuning, no threshold changes, no model
 choices are made here - doing any of those would invalidate the test result.
 """

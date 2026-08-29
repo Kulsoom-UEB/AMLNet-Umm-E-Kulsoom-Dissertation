@@ -1,6 +1,6 @@
 """
 AMLNet - imbalance-handling pipeline components.
-Implements the two strategies described in the research report, in the exact
+Implements two strategies described in the research report, in the exact
 order specified by the project data pipeline:
   Strategy 1 - SMOTENC
       scaling  ->  SMOTENC  ->  one-hot encoding  ->  model

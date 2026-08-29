@@ -1,5 +1,5 @@
 """
-AMLNet project - shared configuration and helper utilities.
+AMLNet project - shared configuration & helper utilities.
 Project title:
     Explainable Machine Learning for Suspicious Transaction Risk Detection
     in Anti-Money Laundering

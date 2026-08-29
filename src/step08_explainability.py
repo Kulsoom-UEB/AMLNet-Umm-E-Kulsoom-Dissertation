@@ -1,5 +1,5 @@
 """
-Step 08: Explainability - SHAP, feature importance, permutation importance.
+Step 08: Explainability - SHAP, feature importance & permutation importance.
 CRISP-DM: Evaluation.
 Explains whichever model step 06 selected. Handles both pipeline shapes
 (class-weighting ColumnTransformer and SMOTENC scale->resample->one-hot)

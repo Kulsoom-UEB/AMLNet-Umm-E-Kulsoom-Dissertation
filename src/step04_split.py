@@ -1,5 +1,5 @@
 """
-Step 04: Preprocessing Design and Train-Validation-Test Split.
+Step 04: Preprocessing Design & Train-Validation-Test Split.
 CRISP-DM: Data Preparation.
 Separates X and y, defines numeric/categorical groups and creates a stratified
 70/15/15 split. Validation and test sets are never resampled or transformed
