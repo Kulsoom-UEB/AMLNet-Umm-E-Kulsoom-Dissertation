@@ -1,5 +1,5 @@
 {
-  "selected_model": "XGBoost_class_weight",
+  "selected_model": "XGBoost_class_weight*",
   "imbalance_strategy": "Class weighting",
   "selected_threshold": 0.99,
   "tuned_hyperparameters": "{\"model__colsample_bytree\": 0.7468055921327309, \"model__learning_rate\": 0.04807901366051648, \"model__max_depth\": 5, \"model__n_estimators\": 352, \"model__subsample\": 0.9598528437324805}",
