@@ -1,0 +1,17 @@
+group,column_name
+Target,isMoneyLaundering
+Leakage/proxy - exclude,laundering_typology
+Leakage/proxy - exclude,metadata
+Leakage/proxy - exclude,fraud_probability
+Leakage/proxy - exclude,isFraud
+Identifier - exclude,nameOrig
+Identifier - exclude,nameDest
+Safe candidate feature,type
+Safe candidate feature,amount
+Safe candidate feature,category
+Safe candidate feature,oldbalanceOrg
+Safe candidate feature,newbalanceOrig
+Safe candidate feature,hour
+Safe candidate feature,day_of_week
+Safe candidate feature,day_of_month
+Safe candidate feature,month

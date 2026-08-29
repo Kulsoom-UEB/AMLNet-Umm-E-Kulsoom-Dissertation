@@ -1,0 +1,51 @@
+case_type,row_index,risk_score,true_label,predicted_label,base_value,feature_group,shap_contribution,direction,observed_value
+True positive,718249,0.999988,1,1,0.202514,category,-5.489411,Decreases risk,Other
+True positive,718249,0.999988,1,1,0.202514,amount,1.20994,Increases risk,23687.803
+True positive,718249,0.999988,1,1,0.202514,amount_to_oldbalance_ratio,0.726272,Increases risk,0.29937732
+True positive,718249,0.999988,1,1,0.202514,balance_change_orig,0.609619,Increases risk,23687.805
+True positive,718249,0.999988,1,1,0.202514,oldbalanceOrg,-0.421062,Decreases risk,79123.57
+True positive,613243,0.99998,1,1,0.202514,category,-5.357589,Decreases risk,Other
+True positive,613243,0.99998,1,1,0.202514,amount,1.206527,Increases risk,6592.6016
+True positive,613243,0.99998,1,1,0.202514,amount_to_oldbalance_ratio,0.760285,Increases risk,0.068543576
+True positive,613243,0.99998,1,1,0.202514,oldbalanceOrg,-0.557508,Decreases risk,96181.17
+True positive,613243,0.99998,1,1,0.202514,balance_change_orig,0.537129,Increases risk,6592.6016
+True positive,752244,0.99998,1,1,0.202514,category,-5.371417,Decreases risk,Other
+True positive,752244,0.99998,1,1,0.202514,amount,1.1697,Increases risk,17473.14
+True positive,752244,0.99998,1,1,0.202514,amount_to_oldbalance_ratio,0.793786,Increases risk,0.13209479
+True positive,752244,0.99998,1,1,0.202514,balance_change_orig,0.61445,Increases risk,17473.14
+True positive,752244,0.99998,1,1,0.202514,oldbalanceOrg,-0.533418,Decreases risk,132277.3
+True positive,1090062,0.999978,1,1,0.202514,category,-5.575278,Decreases risk,Other
+True positive,1090062,0.999978,1,1,0.202514,amount,1.330655,Increases risk,20840.03
+True positive,1090062,0.999978,1,1,0.202514,amount_to_oldbalance_ratio,0.602924,Increases risk,0.09012349
+True positive,1090062,0.999978,1,1,0.202514,balance_change_orig,0.563946,Increases risk,20840.031
+True positive,1090062,0.999978,1,1,0.202514,oldbalanceOrg,-0.526877,Decreases risk,231238.6
+True positive,1090145,0.999976,1,1,0.202514,category,-5.630138,Decreases risk,Other
+True positive,1090145,0.999976,1,1,0.202514,amount,1.369488,Increases risk,19098.75
+True positive,1090145,0.999976,1,1,0.202514,balance_change_orig,0.768779,Increases risk,19098.75
+True positive,1090145,0.999976,1,1,0.202514,amount_to_oldbalance_ratio,0.646118,Increases risk,0.04727098
+True positive,1090145,0.999976,1,1,0.202514,log_amount,0.389805,Increases risk,9.85743
+False negative,824927,0.988511,1,0,0.202514,category,-5.442544,Decreases risk,Shell Company
+False negative,824927,0.988511,1,0,0.202514,amount,1.279873,Increases risk,8020.0825
+False negative,824927,0.988511,1,0,0.202514,balance_change_orig,0.662887,Increases risk,8020.0938
+False negative,824927,0.988511,1,0,0.202514,type,0.433647,Increases risk,TRANSFER
+False negative,824927,0.988511,1,0,0.202514,newbalanceOrig,-0.306284,Decreases risk,293068.56
+False negative,976749,0.987489,1,0,0.202514,category,-4.387919,Decreases risk,Other
+False negative,976749,0.987489,1,0,0.202514,day_of_month,-1.179801,Decreases risk,1
+False negative,976749,0.987489,1,0,0.202514,month,0.644657,Increases risk,8
+False negative,976749,0.987489,1,0,0.202514,type,0.577562,Increases risk,TRANSFER
+False negative,976749,0.987489,1,0,0.202514,day_of_week,-0.368742,Decreases risk,4
+False negative,642999,0.986257,1,0,0.202514,category,-5.498806,Decreases risk,Shell Company
+False negative,642999,0.986257,1,0,0.202514,amount,1.171751,Increases risk,6144.0083
+False negative,642999,0.986257,1,0,0.202514,oldbalanceOrg,-0.667758,Decreases risk,177535.75
+False negative,642999,0.986257,1,0,0.202514,amount_to_oldbalance_ratio,0.644672,Increases risk,0.03460716
+False negative,642999,0.986257,1,0,0.202514,balance_change_orig,0.596906,Increases risk,6144.0156
+False negative,523246,0.984562,1,0,0.202514,category,-5.340907,Decreases risk,Shell Company
+False negative,523246,0.984562,1,0,0.202514,amount,1.438041,Increases risk,2411.6694
+False negative,523246,0.984562,1,0,0.202514,balance_change_orig,0.978556,Increases risk,2411.6875
+False negative,523246,0.984562,1,0,0.202514,day_of_month,-0.826897,Decreases risk,2
+False negative,523246,0.984562,1,0,0.202514,balance_change_minus_amount,-0.670691,Decreases risk,0.018066406
+False negative,649498,0.984363,1,0,0.202514,category,-5.578164,Decreases risk,Shell Company
+False negative,649498,0.984363,1,0,0.202514,amount,1.481619,Increases risk,10832.36
+False negative,649498,0.984363,1,0,0.202514,balance_change_orig,0.611655,Increases risk,10832.375
+False negative,649498,0.984363,1,0,0.202514,day_of_month,-0.539092,Decreases risk,26
+False negative,649498,0.984363,1,0,0.202514,balance_change_minus_amount,-0.484891,Decreases risk,0.0146484375

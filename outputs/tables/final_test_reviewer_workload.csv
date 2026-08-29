@@ -1,0 +1,2 @@
+test_transactions,actual_laundering_cases,alerts_raised,alert_rate_percent,alerts_per_10k_transactions,true_positives_confirmed,false_positives_to_review,missed_cases_false_negatives,precision_of_alert_queue,interpretation
+163526,262,242,0.148,14.8,235,7,27,0.971074,Each alert prioritises a transaction for human review; it is not a determination of laundering.

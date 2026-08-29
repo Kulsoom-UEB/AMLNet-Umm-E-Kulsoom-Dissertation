@@ -1,0 +1,2 @@
+exact_duplicate_rows_all_loaded_columns,duplicate_rows_ignoring_step,note
+0,0,metadata column excluded from duplicate check (not loaded).

@@ -1,0 +1,12 @@
+engineered_feature,missing_count,missing_percentage
+balance_change_orig,0,0.0
+balance_change_minus_amount,0,0.0
+amount_to_oldbalance_ratio,0,0.0
+amount_to_newbalance_ratio,0,0.0
+balance_change_to_oldbalance_ratio,0,0.0
+is_zero_oldbalanceOrg,0,0.0
+is_zero_newbalanceOrig,0,0.0
+log_amount,0,0.0
+log_oldbalanceOrg,0,0.0
+log_newbalanceOrig,0,0.0
+log_abs_balance_change,0,0.0

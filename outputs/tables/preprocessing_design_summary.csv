@@ -1,0 +1,6 @@
+design_item,decision,leakage_control
+Numeric preprocessing,SimpleImputer(median) + StandardScaler,Fitted inside pipeline on training folds only
+Categorical preprocessing,OneHotEncoder(handle_unknown='ignore'),Fitted inside pipeline on training folds only
+Imbalance handling,"class_weight / scale_pos_weight, plus SMOTENC experiments",Resampling applied to training data only
+Validation set use,Model comparison and threshold selection,"Never resampled, never used for fitting"
+Test set use,Single final evaluation of the selected model,Untouched until Step 08

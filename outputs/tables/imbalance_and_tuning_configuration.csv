@@ -1,0 +1,2 @@
+training_rows,training_negatives,training_positives,scale_pos_weight,smotenc_sampling_strategy,positives_after_smotenc,synthetic_positives_created,tuning_search_iterations,tuning_cv_folds,tuning_scoring,tuning_subsample_rows
+763120,761899,1221,623.995905,0.05,38094,36873,6,3,average_precision (PR-AUC),250000

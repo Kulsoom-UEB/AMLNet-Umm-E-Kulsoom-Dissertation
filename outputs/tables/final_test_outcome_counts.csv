@@ -1,0 +1,5 @@
+outcome,n
+True negative,163257
+True positive,235
+False negative,27
+False positive,7

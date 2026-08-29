@@ -1,0 +1,3 @@
+column,unique_values,cardinality_ratio,decision
+nameOrig,10000,0.009173,"Exclude - high-cardinality identifier, memorisation risk"
+nameDest,11000,0.01009,"Exclude - high-cardinality identifier, memorisation risk"

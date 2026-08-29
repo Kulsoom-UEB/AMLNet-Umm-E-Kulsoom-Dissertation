@@ -1,0 +1,10 @@
+column,missing_count,handling
+type,0,OneHotEncoder(handle_unknown='ignore') inside pipeline
+amount,0,Median imputation inside training-fitted pipeline
+category,0,OneHotEncoder(handle_unknown='ignore') inside pipeline
+oldbalanceOrg,0,Median imputation inside training-fitted pipeline
+newbalanceOrig,0,Median imputation inside training-fitted pipeline
+hour,0,Median imputation inside training-fitted pipeline
+day_of_week,0,Median imputation inside training-fitted pipeline
+day_of_month,0,Median imputation inside training-fitted pipeline
+month,0,Median imputation inside training-fitted pipeline

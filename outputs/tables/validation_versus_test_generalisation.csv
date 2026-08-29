@@ -1,0 +1,5 @@
+metric,validation,test,difference,interpretation
+Precision,0.96218487394958,0.9710743801652892,0.00889,Consistent with validation - no evidence of overfitting
+Recall,0.8740458015267175,0.8969465648854962,0.022901,Consistent with validation - no evidence of overfitting
+F1-score,0.916,0.9325396825396826,0.01654,Consistent with validation - no evidence of overfitting
+PR-AUC,0.9467937540721272,0.9524650696389358,0.005671,Consistent with validation - no evidence of overfitting

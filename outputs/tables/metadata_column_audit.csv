@@ -1,0 +1,2 @@
+sampled_rows,mean_characters_per_row,max_characters_per_row,contains_risk_score_field,contains_layering_field,decision
+200,521,597,True,False,Exclude - embeds generator risk indicators and typology traces.

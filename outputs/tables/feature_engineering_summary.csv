@@ -1,0 +1,12 @@
+engineered_feature,source_columns,feature_type,reason,leakage_safe
+balance_change_orig,"oldbalanceOrg, newbalanceOrig",Numeric,Captures originator balance movement after the transaction.,Yes
+balance_change_minus_amount,"oldbalanceOrg, newbalanceOrig, amount",Numeric,Checks whether observed balance movement aligns with the transaction amount.,Yes
+amount_to_oldbalance_ratio,"amount, oldbalanceOrg",Numeric,Measures transaction amount relative to the starting balance.,Yes
+amount_to_newbalance_ratio,"amount, newbalanceOrig",Numeric,Measures transaction amount relative to the ending balance.,Yes
+balance_change_to_oldbalance_ratio,"oldbalanceOrg, newbalanceOrig",Numeric,Measures balance movement relative to the starting balance.,Yes
+is_zero_oldbalanceOrg,oldbalanceOrg,Binary indicator,Flags transactions where the originator starts with zero balance.,Yes
+is_zero_newbalanceOrig,newbalanceOrig,Binary indicator,Flags transactions where the originator ends with zero balance.,Yes
+log_amount,amount,Numeric log-transformed,Reduces skewness in transaction amount.,Yes
+log_oldbalanceOrg,oldbalanceOrg,Numeric log-transformed,Reduces skewness in old originator balance.,Yes
+log_newbalanceOrig,newbalanceOrig,Numeric log-transformed,Reduces skewness in new originator balance.,Yes
+log_abs_balance_change,"oldbalanceOrg, newbalanceOrig",Numeric log-transformed,Reduces skewness in absolute balance movement.,Yes

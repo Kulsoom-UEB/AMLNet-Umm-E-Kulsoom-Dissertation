@@ -1,0 +1,6 @@
+caveat,detail
+Synthetic data,AMLNet is generated; learned patterns reflect generator rules as much as real laundering behaviour.
+Category/type dominance,"Transaction category and type dominate importance, indicating strong generator-side signal rather than subtle behavioural detection."
+Correlated features,"Engineered balance and amount features are correlated, so importance is shared and single attributions should not be read alone."
+Explanations are not evidence,"SHAP shows what the model responded to, not that laundering occurred."
+Non-temporal split,Stratified random split does not replicate chronological or account-disjoint deployment conditions.

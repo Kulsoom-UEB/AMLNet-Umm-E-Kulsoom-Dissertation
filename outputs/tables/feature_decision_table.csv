@@ -1,0 +1,18 @@
+column_name,decision,included_in_model,reason
+isMoneyLaundering,Target,No,Binary AML target label to be predicted.
+laundering_typology,Exclude,No,Typology label (structuring/layering/integration) directly reveals the target.
+metadata,Exclude,No,"Embedded generator dictionary containing risk_score, layering and structuring traces."
+fraud_probability,Exclude,No,Generated risk-score-like field produced by the data generator.
+isFraud,Exclude,No,Related generated fraud label; acts as a proxy for the AML target.
+nameOrig,Exclude,No,High-cardinality originator identifier; encourages account memorisation.
+nameDest,Exclude,No,High-cardinality destination identifier; encourages account memorisation.
+step,Exclude,No,The `step` column was removed because it represents the simulation time index rather than a meaningful transaction attribute for suspicious transaction risk prediction.
+type,Keep,Yes,Payment method; behavioural categorical feature.
+amount,Keep,Yes,Transaction amount; core behavioural feature.
+category,Keep,Yes,Transaction category; behavioural categorical feature.
+oldbalanceOrg,Keep,Yes,Originator balance before the transaction.
+newbalanceOrig,Keep,Yes,Originator balance after the transaction.
+hour,Keep,Yes,Hour of transaction; temporal behaviour.
+day_of_week,Keep,Yes,Day of week; temporal behaviour.
+day_of_month,Keep,Yes,Day of month; temporal behaviour.
+month,Keep,Yes,Month; temporal behaviour.

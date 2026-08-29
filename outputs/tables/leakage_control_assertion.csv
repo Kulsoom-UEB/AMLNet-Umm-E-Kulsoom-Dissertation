@@ -1,0 +1,2 @@
+check,status,columns_checked
+No leakage/proxy/identifier column present in cleaned dataset,PASSED,"laundering_typology, metadata, fraud_probability, isFraud, nameOrig, nameDest"

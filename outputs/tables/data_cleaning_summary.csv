@@ -1,0 +1,2 @@
+rows_in_raw_dataset,rows_removed_missing_target,duplicate_rows_removed,rows_in_cleaned_dataset,columns_in_cleaned_dataset,columns_excluded_for_leakage,columns_excluded_as_identifiers,normal_transactions,laundering_transactions,positive_rate_percent,cleaned_dataset_path
+1090172,0,0,1090172,10,4,2,1088427,1745,0.160066,C:\Users\hassa\PycharmProjects\AML\data\processed\cleaned_amlnet.parquet

@@ -1,0 +1,2 @@
+rows,columns_in_file,columns_loaded_for_audit,columns_excluded_for_memory,unexpected_columns,memory_mb
+1090172,17,16,metadata,none,59.4

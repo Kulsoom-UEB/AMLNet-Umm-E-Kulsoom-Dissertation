@@ -1,0 +1,4 @@
+split,rows,share_of_dataset_percent,normal_transactions,laundering_transactions,positive_rate_percent
+train,763120,70.0,761899,1221,0.160001
+validation,163526,15.0,163264,262,0.160219
+test,163526,15.0,163264,262,0.160219

@@ -1,0 +1,2 @@
+expected_dataset_filename,expected_dataset_location,dataset_doi,dataset_file_exists,file_size_mb,expected_md5,md5_verified
+AMLNet.csv,C:\Users\hassa\PycharmProjects\AML\data\raw\AMLNet.csv,10.5281/zenodo.16736515,True,659.3,7668fc7d74c787e07546ce85c6f790b9,
